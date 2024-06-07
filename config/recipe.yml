@@ -1,11 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: template
-# description will be included in the image's metadata
-description: This is my personal OS image.
+name: CentOS-Stream 9 Atomic
+description: An experimental variant of CentOS-Stream using bootc
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 39 # latest is also supported if you want new updates ASAP
+base-image: quay.io/centos-bootc/centos-bootc-dev
+image-version: stream9
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -18,15 +17,16 @@ modules:
 
   - type: rpm-ostree
     repos:
-      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/kwizart/kernel-longterm-6.6/repo/centos-stream-9/kwizart-kernel-longterm-6.6-centos-stream-9.repo
+      # - https://copr.fedorainfracloud.org/coprs/g/centoshyperscale/gnome/repo/centos-stream+epel-next-9/group_centoshyperscale-gnome-centos-stream+epel-next-9.repo
+      # - https://copr.fedorainfracloud.org/coprs/g/centoshyperscale/kernel/repo/centos-stream+epel-next-9/group_centoshyperscale-kernel-centos-stream+epel-next-9.repo
+      - https://copr.fedorainfracloud.org/coprs/g/centoshyperscale/systemd/repo/centos-stream+epel-next-9/group_centoshyperscale-systemd-centos-stream+epel-next-9.repo
     install:
-      # - micro
-      # - starship
+      - https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+      - kernel
+      - rpm-ostree
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      # - 
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
