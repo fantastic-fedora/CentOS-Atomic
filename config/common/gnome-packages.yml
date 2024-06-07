@@ -1,0 +1,44 @@
+type: rpm-ostree
+repos:
+  - .repo
+install:
+  - gnome-shell
+  - gnome-terminal
+  - xdg-desktop-portal-gnome
+  - gnome-session
+  - gnome-session-wayland-session
+  - chrome-gnome-shell
+  - gnome-backgrounds
+  - gnome-bluetooth
+  - gnome-calculator
+  - gnome-characters
+  - gnome-classic-session
+  - gnome-color-manager
+  - gnome-control-center
+  - gnome-control-center
+  - gnome-control-center-filesystem
+  - gnome-disk-utility
+  - gnome-font-viewer
+  - gnome-initial-setup
+  - gnome-kiosk
+  - gnome-logs
+  - gnome-menus
+  - gnome-online-accounts
+  - gnome-remote-desktop
+  - gnome-screenshot
+  - gnome-settings-daemon
+  - gnome-software
+  - gnome-software-flatpak
+  - gnome-system-monitor
+  - gnome-terminal-nautilus
+  - gnome-tour
+  - gnome-tweaks
+  - gnome-user-docs
+  - libgnomekbd
+  - nautilus
+  - xdg-user-dirs-gtk
+#  - gnome-shell-extension-dash-to-panel
+#  - gnome-shell-extension-apps-menu
+#  - gnome-shell-extension-drive-menu
+#  - gnome-shell-extension-places-menu
+#  - gnome-shell-extension-systemMonitor

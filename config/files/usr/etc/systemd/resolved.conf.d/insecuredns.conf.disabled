@@ -1,0 +1,16 @@
+# INSECURE DNS CONFIGURATION
+#
+# This config is needed to make Captive Portals work.
+# It will use the DNS Server advertized over DHCP,
+# and allows exploitations like redirecting HTTP requestsy
+# which are the foundation of Captive Portals.
+#
+# Only use this for logging in to public Networks using Captive Portals,
+# and address complaints to the providers.
+
+[Resolve]
+DNSSEC=no
+DNSOverTLS=no
+#DNS=
+#FallbackDNS=
+

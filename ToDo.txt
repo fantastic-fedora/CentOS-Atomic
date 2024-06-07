@@ -1,0 +1,7 @@
+find correct CentOS 9 repos to add
+
+https://centos.pkgs.org/
+
+Mention Apache 2.0 License of secureblue
+
+link to files in secureblue instead of copying

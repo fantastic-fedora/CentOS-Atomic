@@ -1,0 +1,26 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/secureblue/hardened_malloc/repo/fedora-%OS_VERSION%/secureblue-hardened_malloc-fedora-%OS_VERSION%.repo
+install:
+  - lynis
+  - usbguard
+  - usbguard-dbus
+  - setools
+  - podman
+  - distrobox
+  - fwupd
+  - fwupd-efi
+  - fwupd-plugin-flashrom
+  - fwupd-plugin-modem-manager
+  - fwupd-plugin-uefi-capsule-data
+  - parallel
+  - fish
+  - firewalld
+  - htop
+  - nvme-cli
+  - cosign
+  - wireguard-tools
+  - pam_yubico
+  - grub2-tools-extra
+  - vim-enhanced
+#  - snapper

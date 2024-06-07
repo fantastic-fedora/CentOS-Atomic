@@ -1,0 +1,7 @@
+# disable all addons
+# https://discuss.kde.org/t/12829
+
+[KDE Action Restrictions][$i]
+ghns=false
+
+# COPY this file to "kdeglobals" to make it active

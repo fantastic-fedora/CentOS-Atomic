@@ -1,0 +1,86 @@
+type: rpm-ostree
+repos:
+  -
+install:
+  - plasma-workspace-wayland
+  - sddm
+  - breeze-icon-theme
+  - colord-kde
+  - dolphin
+  - flatpak-kcm
+  - kate
+  - kde-connect
+  - kde-gtk-config
+  - kde-partitionmanager
+  - kde-print-manager
+  - kde-settings
+  - kde-settings-plasma
+  - kde-settings-sddm
+  - kde-settings-splash
+  - kde-style-breeze
+  - kdeconnectd
+  - kdegraphics-thumbnailers
+  - kdeplasma-addons
+  - kdialog
+  - kf5-akonadi-server
+  - kf5-akonadi-server-mysql
+  - kf5-baloo-file
+  - kf5-kipi-plugins
+  - khotkeys
+  - kmenuedit
+  - konsole5
+  - kscreen
+  - kscreenlocker
+  - ksshaskpass
+  - kwalletmanager5
+  - kwebkitpart
+  - kwin-wayland
+  - pam-kwallet
+  - phonon-qt5-backend-gstreamer
+  - pinentry-qt
+  - plasma-breeze
+  - plasma-desktop
+  - plasma-desktop-doc
+  - plasma-discover
+  - plasma-discover-flatpak
+  - plasma-drkonqi
+  - plasma-nm
+  - plasma-nm-l2tp
+  - plasma-nm-openconnect
+  - plasma-nm-openvpn
+  - plasma-pa
+  - plasma-user-manager
+  - plasma-workspace-geolocation
+  - polkit-kde
+  - qt5-qtbase-gui
+  - qt5-qtdeclarative
+  - sddm-breeze
+  - sddm-kcm
+  - sni-qt
+  - plasma-vault
+  - plasma-disk
+  - plasma-thunderbolt
+  - plasma-integration
+  - plasma-welcome
+  - plasma-browser-integration
+  - sddm-wayland-plasma
+  - spectacle
+  - ark
+  - xwaylandvideobridge
+  - kaccounts-providers
+  - kaccounts-integration
+  - accountsservice
+  - kio-fuse
+  - kio-admin
+  - kio-extras
+  - kio-gdrive
+  - xdg-desktop-portal-kde
+  - filelight
+  - kinfocenter
+  - kcalc
+  - kcharselect
+  - kmenuedit
+  - plasma-systemmonitor
+
+# left out packages
+# breeze-gtk cagibi kdnssd ksysguard plasma-nm-openswan plasma-nm-pptp plasma-nm-vpnc xorg-x11-drv-libinput
